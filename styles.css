@@ -11,163 +11,161 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho */
+    width: 100%; 
 }
 
 .section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Asegúrate de que cada sección ocupe todo el ancho */
+    width: 100%; 
 }
 
-/* Sección de fondo */
+
 .section--background {
     position: relative;
-    height: 100vh; /* Mantiene la altura completa para el fondo */
+    height: 100vh; 
 }
 
 .background-image {
-    background-image: url('images/background.png'); /* Asegúrate de que la ruta sea correcta */
+    background-image: url('images/background.png'); 
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column; /* Para apilar los elementos */
-    justify-content: flex-start; /* Alinear hacia la parte superior */
-    padding: 20px; /* Espaciado interior */
+    flex-direction: column; 
+    justify-content: flex-start; 
+    padding: 20px; 
 }
 
 .section__header {
     display: flex;
-    flex-direction: row; /* Cambiado a 'row' para alinear horizontalmente */
-    justify-content: space-between; /* Espacia los elementos en los extremos */
-    align-items: flex-start; /* Alinea todos los elementos a la parte superior */
-    color: rgb(0, 0, 0); /* Cambiar el color del texto */
-    margin-bottom: 20px; /* Espacio entre el header y el contenido */
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    color: rgb(0, 0, 0); 
+    margin-bottom: 20px; 
 }
 
 .header__title {
-    font-size: 2.5rem; /* Tamaño grande para el título */
+    font-size: 2.5rem; 
 }
 
 .header__contacts {
-    display: flex; /* Muestra los contactos en fila */
-    justify-content: flex-end; /* Alinea los elementos a la derecha */
-    margin-top: 10px; /* Espacio entre el título y los contactos */
+    display: flex; 
+    justify-content: flex-end; 
+    margin-top: 10px; 
 }
 
 .header__contact {
-    font-size: 1.2rem; /* Tamaño de fuente de los contactos */
-    margin-left: 20px; /* Espaciado entre los elementos */
+    font-size: 1.2rem; 
+    margin-left: 20px; 
     margin-right: 20px;
 }
 
-/* Estilos para la sección de contenido */
+
 .section__content {
-    text-align: left; /* Alinear texto a la izquierda */
-    color: white; /* Cambiar el color del texto */
-    margin-top: 20px; /* Espacio entre el header y el contenido */
+    text-align: left; 
+    color: white; 
+    margin-top: 20px; 
 }
 
 .section__main-text {
-    font-size: 10rem; /* Texto grande */
-    margin-bottom: 10px; /* Espacio debajo del texto grande */
+    font-size: 10rem; 
+    margin-bottom: 10px; 
     margin-top: 120px;
 }
 
 .section__description {
-    margin-bottom: 20px; /* Espacio debajo de la descripción */
+    margin-bottom: 20px; 
     margin-right: 50%;
 }
 
 .section__button {
-    background-color: yellow; /* Color del botón */
+    background-color: yellow; 
     border: none;
-    border-radius: 5px; /* Esquinas redondeadas */
-    padding: 20px 40px; /* Espacio interno */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
-    font-size: 25px; /* Tamaño de fuente */
+    border-radius: 5px; 
+    padding: 20px 40px; 
+    cursor: pointer; 
+    font-size: 25px; 
     margin-left: 35px;
 }
 
 .section__button:hover {
-    background-color: #FFD700; /* Color más oscuro al pasar el ratón */
+    background-color: #FFD700; 
 }
 
-/* Sección de texto */
 .section--text {
-    background-color: white; /* Fondo blanco */
+    background-color: white; 
     margin-top: 150px;
     margin-bottom: 150px;
 }
 
 .section__content_tex {
     text-align: center;
-    background-color: rgb(255, 255, 255); /* Fondo blanco */
+    background-color: rgb(255, 255, 255); 
 }
 
-/* Sección de imágenes */
+
 .section--images {
-    background-color: rgb(110, 238, 255); /* Fondo blanco */
-    width: 100%; /* Asegura que la sección ocupe todo el ancho */
+    background-color: rgb(110, 238, 255); 
+    width: 100%; 
     height: 400px;
 }
 
 .images__container {
     display: flex;
-    justify-content: space-between; /* Espacio equitativo entre elementos */
-    align-items: center; /* Centra los elementos verticalmente */
-    width: 100%; /* Ancho completo */
-    margin-bottom: 20px; /* Espacio inferior */
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    margin-bottom: 20px; 
 }
 
 .images__item-container {
-    text-align: center; /* Centra las imágenes y descripciones */
-    flex: 1; /* Permite que cada contenedor ocupe el mismo espacio */
-    margin: 0 55px; /* Elimina el margen horizontal */
+    text-align: center; 
+    flex: 1; 
+    margin: 0 55px; 
 }
 
 .images__item {
-    max-width: 100px; /* Ancho máximo para las imágenes, ajusta este valor según tus necesidades */
-    width: 100%; /* Permite que la imagen mantenga su tamaño original hasta el máximo */
-    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100px; 
+    width: 100%; 
+    height: auto; 
 }
 
 .images__description {
-    margin-top: 10px; /* Espacio entre imagen y descripción */
+    margin-top: 10px; 
     font-size: 1rem; 
     color: black;
 }
 
 .images__button {
-    background-color: yellow; /* Color del botón amarillo */
+    background-color: yellow; 
     border: none;
-    border-radius: 5px; /* Esquinas redondeadas */
-    padding: 10px 20px; /* Espacio interno */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
-    font-size: 16px; /* Tamaño de fuente */
-    text-align: center; /* Centra el texto */
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    text-align: center; 
     display: inline-block; 
 }
 
 .images__button:hover {
-    background-color: #FFD700; /* Color más oscuro al pasar el ratón */
+    background-color: #FFD700; 
 }
 
-/* Sección vacía */
 .section--empty {
-    background-image: url('images/bg-grid.png'); /* Asegúrate de que la ruta sea correcta */
-    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen en el fondo */
-    height: 60vh; /* Ajusta la altura según sea necesario */
-    display: flex; /* Permite alinear el contenido dentro de la sección */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    color: white; /* Cambia el color del texto según lo necesites */
-    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente para mejorar el contraste */
+    background-image: url('images/bg-grid.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 60vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .section__content_fin {
@@ -177,22 +175,22 @@ body {
     margin-bottom: 100px;
     margin-right: 300px;
     margin-left: 25px;
-    color: rgb(0, 0, 0); /* Cambia el color del texto según lo necesites */
+    color: rgb(0, 0, 0); 
 }
 
 .section__img_fin {
-    flex-shrink: 0; /* Evita que la imagen se reduzca */
-    display: flex; /* Activa Flexbox en este contenedor */
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: center; /* Centra la imagen verticalmente */
-    margin-top: 100px; /* Alinea la imagen con el texto */
-    margin-left: 25px; /* Espacio a la izquierda */
-    height: auto; /* Mantiene la proporción de la imagen */
+    flex-shrink: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 100px; 
+    margin-left: 25px; 
+    height: auto; 
 }
 
 .images__item_fin {
-    max-width: 350px; /* Ajusta el tamaño de la imagen según sea necesario */
-    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 350px;
+    height: auto;
     margin-bottom: 80px;
     margin-right: 100px;
 }
